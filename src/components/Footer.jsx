@@ -27,6 +27,17 @@ export default function Footer() {
         <p className="footer__copy">
           © {year} {siteContent.brand}. Sva prava zadržana.
         </p>
+
+        <p className="footer__credit">
+          Sajt urađen od strane{' '}
+          <a
+            href="https://audaxtim.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Audax TIM
+          </a>
+        </p>
       </div>
     </footer>
   )

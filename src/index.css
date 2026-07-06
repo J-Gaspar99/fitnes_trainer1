@@ -1486,6 +1486,21 @@ code {
   color: rgba(255, 255, 255, 0.25);
 }
 
+.footer__credit {
+  margin-top: 12px;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer__credit a {
+  color: var(--white-muted);
+  transition: color var(--transition);
+}
+
+.footer__credit a:hover {
+  color: var(--white);
+}
+
 /* ─── Responsive ─── */
 @media (max-width: 1024px) {
   .services__grid {
