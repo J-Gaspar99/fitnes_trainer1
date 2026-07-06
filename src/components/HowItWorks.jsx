@@ -33,7 +33,7 @@ function StepCard({ step, index }) {
       ref={ref}
       style={{ transitionDelay: `${index * 0.08}s` }}
     >
-      <span className="step-card__number shimmer-text">{step.number}</span>
+      <span className="step-card__number">{step.number}</span>
       <h3>{step.title}</h3>
       <p>{step.description}</p>
       <a href="#kontakt" className="step-card__cta">Zakaži termin →</a>

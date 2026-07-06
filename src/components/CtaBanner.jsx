@@ -10,7 +10,7 @@ export default function CtaBanner() {
       <div className="cta-banner__bg" />
       <div className="container">
         <div className="cta-banner__header scroll-reveal" ref={ref}>
-          <h2 className="cta-banner__title shimmer-text">{ctaBanner.title}</h2>
+          <h2 className="cta-banner__title">{ctaBanner.title}</h2>
           <p>{ctaBanner.subtitle}</p>
         </div>
 

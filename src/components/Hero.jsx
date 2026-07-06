@@ -53,7 +53,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
           >
             <span className="hero-slider__label">{slide.label}</span>
-            <h1 className="hero-slider__title shimmer-text">
+            <h1 className="hero-slider__title">
               {slide.title.split('\n').map((line, i) => (
                 <span key={i}>{line}<br /></span>
               ))}
