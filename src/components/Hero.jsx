@@ -1,102 +1,92 @@
-import { motion } from 'framer-motion'
-import { HiArrowDown } from 'react-icons/hi'
+import { useState, useEffect, useCallback } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
 import { siteContent } from '../data/content'
-import { useParallax } from '../hooks/useScrollReveal'
 
 export default function Hero() {
-  const imageRef = useParallax(0.4)
-  const silhouetteRef = useParallax(0.2)
+  const [current, setCurrent] = useState(0)
+  const slides = siteContent.heroSlides
+
+  const next = useCallback(() => {
+    setCurrent((c) => (c + 1) % slides.length)
+  }, [slides.length])
+
+  const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length)
+
+  useEffect(() => {
+    const timer = setInterval(next, 6000)
+    return () => clearInterval(timer)
+  }, [next])
+
+  const slide = slides[current]
 
   return (
-    <section id="pocetna" className="hero">
-      <div className="hero__bg">
-        <img
-          src="/images/brand/hero-banner.png"
-          alt=""
-          className="hero__bg-image"
-          aria-hidden="true"
-        />
-        <div className="hero__bg-gradient" />
-        <div className="hero__bg-pattern" />
-        <div className="hero__bg-glow hero__bg-glow--purple" />
-        <div className="hero__bg-glow hero__bg-glow--gold" />
-        <div className="hero__particles" aria-hidden="true">
-          {Array.from({ length: 12 }).map((_, i) => (
-            <span key={i} className="hero__particle" style={{ '--i': i }} />
-          ))}
-        </div>
+    <section id="pocetna" className="hero-slider">
+      <div className="hero-slider__bg">
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={slide.image}
+            src={slide.image}
+            alt=""
+            className="hero-slider__bg-image"
+            initial={{ opacity: 0, scale: 1.08 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            aria-hidden="true"
+          />
+        </AnimatePresence>
+        <div className="hero-slider__overlay" />
+        <div className="hero-slider__glow hero-slider__glow--purple" />
+        <div className="hero-slider__glow hero-slider__glow--gold" />
       </div>
 
-      <div className="container hero__grid">
-        <motion.div
-          className="hero__content"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-        >
+      <div className="container hero-slider__inner">
+        <div className="hero-slider__logo shimmer-logo">
+          <img src="/images/brand/logo.png" alt="MDF logo" />
+        </div>
 
-
-          <span className="hero__badge">
-            <span className="hero__badge-dot" />
-            {siteContent.hero.subtitle}
-          </span>
-
-          <h1 className="hero__title">
-            <span className="hero__title-line shimmer-text">{siteContent.name}</span>
-            <span className="hero__title-accent shimmer-text shimmer-text--purple">Fitnes</span>
-          </h1>
-
-          <p className="hero__tagline">{siteContent.tagline}</p>
-          <p className="hero__description">{siteContent.hero.description}</p>
-
-          <div className="hero__actions">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            className="hero-slider__content"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+          >
+            <span className="hero-slider__label">{slide.label}</span>
+            <h1 className="hero-slider__title shimmer-text">
+              {slide.title.split('\n').map((line, i) => (
+                <span key={i}>{line}<br /></span>
+              ))}
+            </h1>
+            <p className="hero-slider__desc">{slide.description}</p>
             <a href="#kontakt" className="btn btn--gold btn--lg shimmer-btn">
-              {siteContent.hero.cta}
+              {slide.cta}
             </a>
-            <a href="#galerija" className="btn btn--outline btn--lg shimmer-border">
-              {siteContent.hero.ctaSecondary}
-            </a>
-          </div>
+          </motion.div>
+        </AnimatePresence>
 
-          <div className="hero__stats">
-            {siteContent.about.stats.map((stat) => (
-              <div key={stat.label} className="hero__stat">
-                <span className="hero__stat-value shimmer-text">{stat.value}</span>
-                <span className="hero__stat-label">{stat.label}</span>
-              </div>
+        <div className="hero-slider__controls">
+          <button onClick={prev} className="hero-slider__arrow" aria-label="Prethodni slajd">
+            <HiChevronLeft />
+          </button>
+          <div className="hero-slider__dots">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                className={`hero-slider__dot ${i === current ? 'hero-slider__dot--active' : ''}`}
+                onClick={() => setCurrent(i)}
+                aria-label={`Slajd ${i + 1}`}
+              />
             ))}
           </div>
-        </motion.div>
-
-        <motion.div
-          className="hero__visual"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-        >
-
-
-          <div className="hero__frame shimmer-frame" ref={imageRef}>
-            <div className="hero__frame-border shimmer-border" />
-            <img
-              src="/images/hero.jpg"
-              alt="Marija Đorđević — fitnes trener"
-              className="hero__image"
-            />
-            <div className="hero__frame-accent shimmer-glow-purple" />
-          </div>
-        </motion.div>
+          <button onClick={next} className="hero-slider__arrow" aria-label="Sledeći slajd">
+            <HiChevronRight />
+          </button>
+        </div>
       </div>
-
-      <motion.a
-        href="#o-meni"
-        className="hero__scroll"
-        animate={{ y: [0, 8, 0] }}
-        transition={{ repeat: Infinity, duration: 2 }}
-        aria-label="Skroluj dole"
-      >
-        <HiArrowDown />
-      </motion.a>
     </section>
   )
 }

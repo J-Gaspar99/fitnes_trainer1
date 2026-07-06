@@ -6,8 +6,9 @@ import { siteContent } from '../data/content'
 
 const navLinks = [
   { href: '#pocetna', label: 'Početna' },
+  { href: '#program', label: 'Program' },
   { href: '#o-meni', label: 'O meni' },
-  { href: '#usluge', label: 'Usluge' },
+  { href: '#planovi', label: 'Planovi' },
   { href: '#galerija', label: 'Galerija' },
   { href: '#kontakt', label: 'Kontakt' },
 ]

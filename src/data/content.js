@@ -2,13 +2,67 @@ export const siteContent = {
   name: 'Marija Đorđević',
   brand: 'Marija Đorđević Fitnes',
   tagline: 'Jako telo. Jak um. Bez granica.',
-  hero: {
-    subtitle: 'Premium Personalni Trening',
-    description:
-      'Individualni pristup, naučno utemeljeni programi i podrška koja te vodi do rezultata — bez kompromisa.',
-    cta: 'Zakaži konsultaciju',
-    ctaSecondary: 'Pogledaj transformacije',
+
+  heroSlides: [
+    {
+      label: 'Premium personalni trening',
+      title: 'Transformiši telo.\nOstvari ciljeve.',
+      description:
+        'Individualni pristup, naučno utemeljeni programi i podrška koja te vodi do rezultata — bez kompromisa.',
+      cta: 'Zakaži konsultaciju',
+      image: '/images/hero.jpg',
+    },
+    {
+      label: 'Do najbolje verzije sebe',
+      title: 'Novi način\ntreniranja',
+      description:
+        'Reci mi svoje navike i ciljeve, a ja ti kreiram jasan plan koji te vodi korak po korak — bez lutanja i bez stresa.',
+      cta: 'Započni transformaciju',
+      image: '/images/about.png',
+    },
+    {
+      label: 'Pametan plan. Stvarni rezultati.',
+      title: 'Do željene\nforme',
+      description:
+        'Personalizovani treninzi i ishrana kreirani za tvoj cilj — uz podršku iskusnog trenera i praćenje napretka.',
+      cta: 'Aktiviraj program',
+      image: '/images/gallery-1.png',
+    },
+  ],
+
+  program: {
+    label: 'Šta dobijate u programu',
+    title: 'Kompletno vođenje — prilagođeno tebi, a ne proseku',
+    subtitle:
+      'Moj program nije zbir gotovih planova. To je sistem koji kombinuje stručno znanje, personalizaciju i podršku kako bi dobio rešenje koje stvarno funkcioniše u praksi.',
+    features: [
+      {
+        icon: 'plan',
+        title: 'Lično kreiran plan treninga',
+        description:
+          'Koristeći tvoje ciljeve, navike i iskustvo, kreiram trening prilagođen tebi — ne univerzalnom šablonu.',
+      },
+      {
+        icon: 'video',
+        title: 'Video snimci vežbi',
+        description:
+          'Svaka vežba ima jasan video prikaz pravilnog izvođenja, kako bi trenirao sigurno i sa punim samopouzdanjem.',
+      },
+      {
+        icon: 'nutrition',
+        title: 'Raznovrsni planovi ishrane',
+        description:
+          'Ishrana se prilagođava tvojim potrebama i ukusu — bez monotonih obroka, sa ukusnim i održivim jelima.',
+      },
+      {
+        icon: 'progress',
+        title: 'Praćenje napretka',
+        description:
+          'Pratiš promene iz nedelje u nedelju i jasno vidiš rezultate. Dostupna sam za konsultacije i savete.',
+      },
+    ],
   },
+
   about: {
     title: 'O meni',
     subtitle: 'Tvoj partner u transformaciji',
@@ -23,42 +77,167 @@ export const siteContent = {
       { value: '15+', label: 'Sertifikata' },
     ],
   },
-  services: [
-    {
-      icon: 'dumbbell',
-      title: 'Personalni Trening',
-      description:
-        'Individualni treninzi prilagođeni tvom telu i ciljevima. Fokus na tehniku, progresiju i maksimalne rezultate.',
-      price: 'od 4.500 RSD',
-    },
-    {
-      icon: 'laptop',
-      title: 'Online Coaching',
-      description:
-        'Kompletan program treninga i ishrane sa nedeljnim check-in sesijama i podrškom putem aplikacije.',
-      price: 'od 8.000 RSD/mes',
-    },
-    {
-      icon: 'heart',
-      title: 'Program Transformacije',
-      description:
-        '12-nedeljni intenzivni program za potpunu promenu navika, tela i samopouzdanja. Uključuje sve.',
-      price: 'od 35.000 RSD',
-    },
-    {
-      icon: 'nutrition',
-      title: 'Savetovanje Ishrane',
-      description:
-        'Personalizovani plan ishrane bez restriktivnih dijeta — balansirano, održivo i ukusno.',
-      price: 'od 3.500 RSD',
-    },
-  ],
+
+  trainingPlans: {
+    label: 'Planovi treninga',
+    title: 'Programi za svaki cilj',
+    plans: [
+      {
+        icon: 'body',
+        title: 'Oblikovanje tela',
+        description:
+          'Programi fokusirani na zatezanje, čvrstoću i lep oblik tela, prilagođeni tvom nivou i tempu, bez iscrpljivanja i preterivanja.',
+        price: 'od 4.500 RSD',
+      },
+      {
+        icon: 'muscle',
+        title: 'Izgradnja mišića',
+        description:
+          'Pametno planirani treninzi koji grade snagu i mišiće bez nepotrebnog opterećenja, uz balans između estetike i funkcionalnosti.',
+        price: 'od 6.000 RSD',
+      },
+      {
+        icon: 'weight',
+        title: 'Dolazak do željene kilaže',
+        description:
+          'Planovi treninga i ishrane koji te vode ka željenoj kilaži postepeno, održivo i bez rigoroznih dijeta ili kratkoročnih rešenja.',
+        price: 'od 8.000 RSD/mes',
+      },
+    ],
+  },
+
+  howItWorks: {
+    label: 'Kako funkcioniše',
+    title: 'Kako radimo zajedno',
+    steps: [
+      {
+        number: '01',
+        title: 'Zakaži konsultaciju',
+        description:
+          'Popuniš kratak formular ili me kontaktiraš direktno. Dogovaramo se za uvodni razgovor o tvojim ciljevima.',
+      },
+      {
+        number: '02',
+        title: 'Tvoj lični plan treninga',
+        description:
+          'Na osnovu tvog cilja, nivoa i tempa, dobijaš plan treninga sa jasnom strukturom i smernicama.',
+      },
+      {
+        number: '03',
+        title: 'Video snimci vežbi',
+        description:
+          'Svaka vežba iz plana ima video prikaz pravilnog izvođenja — treniraš sigurno i sa samopouzdanjem.',
+      },
+      {
+        number: '04',
+        title: 'Plan ishrane',
+        description:
+          'Dobijaš plan ishrane prilagođen tvojim potrebama, sa raznovrsnim obrocima koji se vremenom menjaju.',
+      },
+      {
+        number: '05',
+        title: 'Podrška i saveti',
+        description:
+          'Dostupna sam za pitanja, korekcije tehnike i motivaciju tokom celog procesa transformacije.',
+      },
+      {
+        number: '06',
+        title: 'Praćenje napretka',
+        description:
+          'Nedeljno pratiš promene i jasno vidiš rezultate. Plan se prilagođava kako napreduješ.',
+      },
+    ],
+  },
+
+  value: {
+    label: 'Zašto Marija Đorđević Fitnes',
+    title: 'Premium vođenje sa stvarnim rezultatima',
+    subtitle:
+      'Za razliku od generičkih planova, moj pristup daje kontinuitet, fleksibilnost i potpunu pažnju posvećenu tvom napretku.',
+    cta: 'Započni svoju transformaciju',
+    items: [
+      {
+        title: 'Kontinuitet bez prekida',
+        description:
+          'Tvoj plan je uvek dostupan. Treniraš kada tebi odgovara, uz moju podršku i jasne smernice za svaki korak.',
+        image: '/images/brand/silhouette.png',
+      },
+      {
+        title: 'Plan koji je uvek sa tobom',
+        description:
+          'Ne dobijaš samo trening u sali — već kompletan sistem: planove, video vežbe, ishranu i praćenje napretka na jednom mestu.',
+        image: '/images/brand/logo.png',
+      },
+      {
+        title: 'Više vrednosti, personalni pristup',
+        description:
+          'Kvalitetno vođenje sa pravim trenerom koji poznaje tvoje telo, navike i ciljeve — ne generički šablon za sve.',
+        image: '/images/brand/poster.png',
+      },
+    ],
+  },
+
+  ctaBanner: {
+    title: 'Aktiviraj svoj fitnes program!',
+    subtitle:
+      'Program koji donosi rezultate kroz provereno znanje i personalizovan pristup — kreni u transformaciju ka najboljoj verziji sebe.',
+    cards: [
+      {
+        title: 'Plan ishrane',
+        description:
+          'Personalizovani plan ishrane prilagođen tvojim ciljevima i ukusu, sa raznovrsnim obrocima koji se lako uklapaju u svakodnevni život.',
+        cta: 'Zakaži konsultaciju',
+      },
+      {
+        title: 'Plan treninga',
+        description:
+          'Treninzi kreirani baš za tebe, prema tvom nivou i cilju, sa jasnom strukturom i kontinuitetom koji donosi vidljive rezultate.',
+        cta: 'Zakaži konsultaciju',
+      },
+    ],
+  },
+
+  testimonials: {
+    label: 'Zadovoljni klijenti',
+    title: 'Šta kažu oni koji su prošli program',
+    items: [
+      {
+        quote:
+          'Zahvaljujući jasno strukturiranim treninzima i preciznoj ishrani, uspela sam da postignem formu kakvu ranije nisam imala.',
+        name: 'Ana',
+        age: 26,
+      },
+      {
+        quote:
+          'Prvi put sam došla do forme kojom sam zaista zadovoljna — bez lutanja, bez improvizacije, sa pravom podrškom.',
+        name: 'Jelena',
+        age: 24,
+      },
+      {
+        quote:
+          'Od neujednačenih treninga do vrhunske forme — Marija mi je dala kontinuitet i disciplinu koja pravi razliku.',
+        name: 'Milica',
+        age: 31,
+      },
+    ],
+  },
+
   gallery: {
     title: 'Galerija',
     subtitle: 'Treninzi, transformacije i inspiracija',
     images: [
       {
-        src: '/images/hero.png',
+        src: '/images/brand/poster.png',
+        alt: 'Marija Đorđević Fitnes — brend poster',
+        caption: 'Premium fitnes brending',
+      },
+      {
+        src: '/images/brand/logo.png',
+        alt: 'MDF logo',
+        caption: 'Snaga. Elegancija. Rezultat.',
+      },
+      {
+        src: '/images/hero.jpg',
         alt: 'Marija Đorđević — profesionalni portret',
         caption: 'Snaga počinje iznutra',
       },
@@ -71,7 +250,12 @@ export const siteContent = {
         src: '/images/gallery-1.png',
         alt: 'Marija Đorđević — fitnes sesija',
         caption: 'Fokus. Forma. Rezultat.',
-      }
+      },
+      {
+        src: '/images/brand/silhouette.png',
+        alt: 'Silueta fitnes trenera',
+        caption: 'Limitless You',
+      },
     ],
     videos: [
       {
@@ -91,12 +275,13 @@ export const siteContent = {
       {
         id: 'v3',
         title: 'Stretching & Recovery',
-        thumbnail: '/images/hero.png',
+        thumbnail: '/images/hero.jpg',
         embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
         description: 'Rastegzanje i oporavak za bolju fleksibilnost i regeneraciju.',
       },
     ],
   },
+
   contact: {
     email: 'marija@djordjevicfitness.rs',
     phone: '+381 64 123 4567',

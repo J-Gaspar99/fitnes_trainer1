@@ -18,8 +18,8 @@ export default function Footer() {
 
         <div className="footer__links">
           <a href="#pocetna">Početna</a>
-          <a href="#o-meni">O meni</a>
-          <a href="#usluge">Usluge</a>
+          <a href="#program">Program</a>
+          <a href="#planovi">Planovi</a>
           <a href="#galerija">Galerija</a>
           <a href="#kontakt">Kontakt</a>
         </div>
