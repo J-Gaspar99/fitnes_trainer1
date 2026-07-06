@@ -42,9 +42,6 @@ export default function Hero() {
       </div>
 
       <div className="container hero-slider__inner">
-        <div className="hero-slider__logo shimmer-logo">
-          <img src="/images/brand/logo.png" alt="MDF logo" />
-        </div>
 
         <AnimatePresence mode="wait">
           <motion.div

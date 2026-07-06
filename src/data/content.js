@@ -226,21 +226,7 @@ export const siteContent = {
     title: 'Galerija',
     subtitle: 'Treninzi, transformacije i inspiracija',
     images: [
-      {
-        src: '/images/brand/poster.png',
-        alt: 'Marija Đorđević Fitnes — brend poster',
-        caption: 'Premium fitnes brending',
-      },
-      {
-        src: '/images/brand/logo.png',
-        alt: 'MDF logo',
-        caption: 'Snaga. Elegancija. Rezultat.',
-      },
-      {
-        src: '/images/hero.jpg',
-        alt: 'Marija Đorđević — profesionalni portret',
-        caption: 'Snaga počinje iznutra',
-      },
+
       {
         src: '/images/about.png',
         alt: 'Marija Đorđević — trening poza',
@@ -250,12 +236,7 @@ export const siteContent = {
         src: '/images/gallery-1.png',
         alt: 'Marija Đorđević — fitnes sesija',
         caption: 'Fokus. Forma. Rezultat.',
-      },
-      {
-        src: '/images/brand/silhouette.png',
-        alt: 'Silueta fitnes trenera',
-        caption: 'Limitless You',
-      },
+      }
     ],
     videos: [
       {
