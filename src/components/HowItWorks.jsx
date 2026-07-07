@@ -1,3 +1,4 @@
+import LightShimmerText from './LightShimmerText'
 import { siteContent } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
@@ -11,7 +12,9 @@ export default function HowItWorks() {
       <div className="container">
         <div className="section-header scroll-reveal" ref={headerRef}>
           <span className="section-label">{howItWorks.label}</span>
-          <h2 className="section-title">{howItWorks.title}</h2>
+          <LightShimmerText as="h2" variant="title" className="section-title">
+            {howItWorks.title}
+          </LightShimmerText>
         </div>
 
         <div className="steps-grid">

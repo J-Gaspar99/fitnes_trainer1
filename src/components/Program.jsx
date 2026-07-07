@@ -1,3 +1,4 @@
+import LightShimmerText from './LightShimmerText'
 import { FaClipboardList, FaVideo, FaAppleAlt, FaChartLine, FaFemale, FaDumbbell, FaWeight } from 'react-icons/fa'
 import { siteContent } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
@@ -24,8 +25,12 @@ export default function Program() {
       <div className="container">
         <div className="section-header scroll-reveal" ref={headerRef}>
           <span className="section-label">{program.label}</span>
-          <h2 className="section-title">{program.title}</h2>
-          <p className="section-subtitle">{program.subtitle}</p>
+          <LightShimmerText as="h2" variant="title" className="section-title">
+            {program.title}
+          </LightShimmerText>
+          <LightShimmerText as="p" variant="subtitle" className="section-subtitle">
+            {program.subtitle}
+          </LightShimmerText>
         </div>
 
         <div className="program__grid">
@@ -67,7 +72,9 @@ export function TrainingPlans() {
       <div className="container">
         <div className="section-header scroll-reveal" ref={headerRef}>
           <span className="section-label">{trainingPlans.label}</span>
-          <h2 className="section-title">{trainingPlans.title}</h2>
+          <LightShimmerText as="h2" variant="title" className="section-title">
+            {trainingPlans.title}
+          </LightShimmerText>
         </div>
 
         <div className="training-plans__grid">
@@ -95,7 +102,6 @@ function PlanCard({ plan, index }) {
       </div>
       <h3>{plan.title}</h3>
       <p>{plan.description}</p>
-      <span className="plan-card__price">{plan.price}</span>
       <a href="#kontakt" className="plan-card__link">Saznaj više →</a>
     </div>
   )

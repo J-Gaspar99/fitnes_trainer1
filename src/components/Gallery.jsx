@@ -1,3 +1,4 @@
+import LightShimmerText from './LightShimmerText'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiPlay, HiX, HiPhotograph, HiVideoCamera } from 'react-icons/hi'
@@ -17,8 +18,12 @@ export default function Gallery() {
       <div className="container">
         <div className="section-header scroll-reveal" ref={headerRef}>
           <span className="section-label">Portfolio</span>
-          <h2 className="section-title">{gallery.title}</h2>
-          <p className="section-subtitle">{gallery.subtitle}</p>
+          <LightShimmerText as="h2" variant="title" className="section-title">
+            {gallery.title}
+          </LightShimmerText>
+          <LightShimmerText as="p" variant="subtitle" className="section-subtitle">
+            {gallery.subtitle}
+          </LightShimmerText>
         </div>
 
         <div className="gallery__tabs">

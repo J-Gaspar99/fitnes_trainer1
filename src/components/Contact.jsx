@@ -1,3 +1,4 @@
+import LightShimmerText from './LightShimmerText'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi'
@@ -27,10 +28,12 @@ export default function Contact() {
       <div className="container">
         <div className="section-header scroll-reveal" ref={headerRef}>
           <span className="section-label">Kontakt</span>
-          <h2 className="section-title">Zakaži konsultaciju</h2>
-          <p className="section-subtitle">
+          <LightShimmerText as="h2" variant="title" className="section-title">
+            Zakaži konsultaciju
+          </LightShimmerText>
+          <LightShimmerText as="p" variant="subtitle" className="section-subtitle">
             Prvi korak ka transformaciji — pošalji poruku i javiću ti se u roku od 24h
-          </p>
+          </LightShimmerText>
         </div>
 
         <div className="contact__grid">

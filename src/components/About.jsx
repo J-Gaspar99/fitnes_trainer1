@@ -1,18 +1,24 @@
+import LightShimmerText from './LightShimmerText'
 import { motion } from 'framer-motion'
 import { siteContent } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function About() {
-  const contentRef = useScrollReveal()
+  const headerRef = useScrollReveal()
   const imageRef = useScrollReveal()
+  const textRef = useScrollReveal()
 
   return (
     <section id="o-meni" className="section about">
       <div className="container">
-        <div className="section-header scroll-reveal" ref={contentRef}>
+        <div className="section-header scroll-reveal" ref={headerRef}>
           <span className="section-label">Upoznaj me</span>
-          <h2 className="section-title">{siteContent.about.title}</h2>
-          <p className="section-subtitle">{siteContent.about.subtitle}</p>
+          <LightShimmerText as="h2" variant="title" className="section-title">
+            {siteContent.about.title}
+          </LightShimmerText>
+          <LightShimmerText as="p" variant="subtitle" className="section-subtitle">
+            {siteContent.about.subtitle}
+          </LightShimmerText>
         </div>
 
         <div className="about__grid">
@@ -31,25 +37,23 @@ export default function About() {
               <div className="about__image-overlay" />
             </div>
             <div className="about__experience">
-              <span className="about__experience-number">8+</span>
-              <span className="about__experience-text">godina<br />iskustva</span>
+              <span className="about__experience-number">13+</span>
+              <span className="about__experience-text">godina<br />atletike</span>
             </div>
           </motion.div>
 
-          <div className="about__content scroll-reveal">
+          <div className="about__content scroll-reveal" ref={textRef}>
             {siteContent.about.paragraphs.map((p, i) => (
               <p key={i} className="about__text">{p}</p>
             ))}
 
             <div className="about__highlights">
-              {['Sertifikovani trener', 'Personalizovani programi', 'Online & uživo'].map(
-                (item) => (
-                  <div key={item} className="about__highlight">
-                    <span className="about__highlight-dot" />
-                    {item}
-                  </div>
-                )
-              )}
+              {siteContent.about.highlights.map((item) => (
+                <div key={item} className="about__highlight">
+                  <span className="about__highlight-dot" />
+                  {item}
+                </div>
+              ))}
             </div>
 
             <a href="#kontakt" className="btn btn--purple">

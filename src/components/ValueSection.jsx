@@ -1,3 +1,4 @@
+import LightShimmerText from './LightShimmerText'
 import { siteContent } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
@@ -10,8 +11,12 @@ export default function ValueSection() {
       <div className="container">
         <div className="section-header scroll-reveal" ref={headerRef}>
           <span className="section-label">{value.label}</span>
-          <h2 className="section-title">{value.title}</h2>
-          <p className="section-subtitle">{value.subtitle}</p>
+          <LightShimmerText as="h2" variant="title" className="section-title">
+            {value.title}
+          </LightShimmerText>
+          <LightShimmerText as="p" variant="subtitle" className="section-subtitle">
+            {value.subtitle}
+          </LightShimmerText>
         </div>
 
         <div className="value-grid">

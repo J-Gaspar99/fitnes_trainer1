@@ -3,6 +3,16 @@ export const siteContent = {
   brand: 'Marija Đorđević Fitnes',
   tagline: 'Jako telo. Jak um. Bez granica.',
 
+  heroIntro: {
+    badge: 'Personalni trener · Online & uživo',
+    title: 'Marija Đorđević',
+    headline: 'Premium fitnes\nkoji donosi rezultate',
+    description:
+      'Stručno vođenje, jasan plan i podrška na svakom koraku — bez kompromisa i bez lutanja.',
+    ctaPrimary: 'Zakaži konsultaciju',
+    ctaSecondary: 'Pogledaj program',
+  },
+
   heroSlides: [
     {
       label: 'Premium personalni trening',
@@ -65,11 +75,17 @@ export const siteContent = {
 
   about: {
     title: 'O meni',
-    subtitle: 'Tvoj partner u transformaciji',
+    subtitle: 'Strast, iskustvo i posvećenost svakom klijentu',
     paragraphs: [
-      'Ja sam Marija Đorđević — sertifikovani fitnes trener sa više od 8 godina iskustva u personalnom treningu, kondicioniranju i nutricionističkom savetovanju. Specijalizovana sam za žensku transformaciju tela, jačanje core muskulature i izgradnju zdravih, održivih navika.',
-      'Moj pristup kombinuje precizno planirane treninge, praćenje napretka i motivaciju koja te drži fokusiranom — bilo da želiš da smršaš, oblikuješ telo ili jednostavno osećaš se snažnije svakog dana.',
-      'Radim sa klijentima lično u Beogradu i online širom regiona. Svaki program je prilagođen tvom životnom ritmu, ciljevima i nivou spremnosti.',
+      'Ja sam Marija Đorđević, profesor fizičkog vaspitanja, bivša profesionalna atletičarka i fitness trener.',
+      'Sport je moja najveća strast i deo mog života od detinjstva. Profesionalno sam se bavila atletikom 13 godina, tokom kojih sam razvila disciplinu, posvećenost i pobednički način razmišljanja koji danas prenosim kroz svoje programe.',
+      'Danas spajam svoje obrazovanje, dugogodišnje sportsko iskustvo i ljubav prema fitnesu kako bih kreirala programe koji su bezbedni, efikasni i prilagođeni stvarnim ljudima i njihovim ciljevima.',
+      'Moj cilj je da ti pomognem da izgradiš snažno telo, zdrave navike i samopouzdanje koje dolazi iz doslednog rada.',
+    ],
+    highlights: [
+      'Profesor fizičkog vaspitanja',
+      'Bivša profesionalna atletičarka',
+      '13 godina atletskog iskustva',
     ],
     stats: [
       { value: '500+', label: 'Zadovoljnih klijenata' },
@@ -87,21 +103,18 @@ export const siteContent = {
         title: 'Oblikovanje tela',
         description:
           'Programi fokusirani na zatezanje, čvrstoću i lep oblik tela, prilagođeni tvom nivou i tempu, bez iscrpljivanja i preterivanja.',
-        price: 'od 4.500 RSD',
       },
       {
         icon: 'muscle',
         title: 'Izgradnja mišića',
         description:
           'Pametno planirani treninzi koji grade snagu i mišiće bez nepotrebnog opterećenja, uz balans između estetike i funkcionalnosti.',
-        price: 'od 6.000 RSD',
       },
       {
         icon: 'weight',
         title: 'Dolazak do željene kilaže',
         description:
           'Planovi treninga i ishrane koji te vode ka željenoj kilaži postepeno, održivo i bez rigoroznih dijeta ili kratkoročnih rešenja.',
-        price: 'od 8.000 RSD/mes',
       },
     ],
   },
