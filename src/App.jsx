@@ -11,7 +11,6 @@ import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import SideDecor from './components/SideDecor'
-import SectionDivider from './components/SectionDivider'
 
 function App() {
   return (
@@ -20,20 +19,14 @@ function App() {
       <Navbar />
       <main className="main-v3">
         <Hero />
-        <SectionDivider />
         <Program />
-        <SectionDivider />
         <About />
-        <SectionDivider />
         <TrainingPlans />
-        <SectionDivider />
         <HowItWorks />
         <StatsBar />
         <ValueSection />
         <CtaBanner />
-        <SectionDivider />
         <Gallery />
-        <SectionDivider />
         <Testimonials />
         <Contact />
       </main>

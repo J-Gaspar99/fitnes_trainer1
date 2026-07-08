@@ -43,18 +43,7 @@ export const siteContent = {
       image: '/images/gallery-1.png',
       imagePosition: 'center 62%',
       imagePositionMobile: 'center 92%',
-    },
-    {
-      label: 'Marija Đorđević Fitness',
-      title: 'Jako telo.\nJak um.',
-      description:
-        'Premium personalni trening, jasan plan i podrška na svakom koraku — bez kompromisa i bez lutanja.',
-      cta: 'Zakaži konsultaciju',
-      image: '/images/brand/logo.png',
-      imagePosition: 'center center',
-      imagePositionMobile: 'center center',
-      imageVariant: 'brand',
-    },
+    }
   ],
 
   program: {

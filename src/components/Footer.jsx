@@ -7,14 +7,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__main">
-          <div className="footer__brand">
-            <img
-              src="/images/brand/logo.png"
-              alt="Marija Đorđević Fitnes"
-              className="footer__logo-img"
-            />
-            <p className="footer__tagline">{siteContent.tagline}</p>
-          </div>
+          <p className="footer__tagline">{siteContent.tagline}</p>
 
           <nav className="footer__links" aria-label="Footer navigacija">
             <a href="#pocetna">Početna</a>
