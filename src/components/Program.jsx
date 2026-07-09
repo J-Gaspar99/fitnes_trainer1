@@ -1,6 +1,6 @@
 import LightShimmerText from './LightShimmerText'
 import SectionDecor from './SectionDecor'
-import { FaClipboardList, FaVideo, FaAppleAlt, FaChartLine, FaFemale, FaDumbbell, FaWeight } from 'react-icons/fa'
+import { FaClipboardList, FaVideo, FaAppleAlt, FaChartLine, FaFemale, FaDumbbell } from 'react-icons/fa'
 import { siteContent } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
@@ -11,10 +11,9 @@ const programIcons = {
   progress: FaChartLine,
 }
 
-const planIcons = {
+const goalIcons = {
   body: FaFemale,
   muscle: FaDumbbell,
-  weight: FaWeight,
 }
 
 export default function Program() {
@@ -35,6 +34,12 @@ export default function Program() {
           </LightShimmerText>
         </div>
 
+        <div className="program__goals-grid training-plans__grid">
+          {program.goals.map((goal, i) => (
+            <GoalCard key={goal.title} goal={goal} index={i} />
+          ))}
+        </div>
+
         <div className="program__grid">
           {program.features.map((feature, i) => (
             <ProgramCard key={feature.title} feature={feature} index={i} />
@@ -42,6 +47,30 @@ export default function Program() {
         </div>
       </div>
     </section>
+  )
+}
+
+function GoalCard({ goal, index }) {
+  const ref = useScrollReveal(0.1)
+  const Icon = goalIcons[goal.icon]
+
+  return (
+    <div
+      className="plan-card scroll-reveal"
+      ref={ref}
+      style={{ transitionDelay: `${index * 0.1}s` }}
+    >
+      <div className="plan-card__media">
+        <img src={goal.image} alt={goal.title} className="plan-card__image" loading="lazy" />
+        <div className="plan-card__overlay" />
+        <div className="plan-card__icon">
+          <Icon />
+        </div>
+      </div>
+      <h3>{goal.title}</h3>
+      <p>{goal.description}</p>
+      <a href="#kontakt" className="plan-card__link">Saznaj više →</a>
+    </div>
   )
 }
 
@@ -64,56 +93,6 @@ function ProgramCard({ feature, index }) {
       </div>
       <h3>{feature.title}</h3>
       <p>{feature.description}</p>
-    </div>
-  )
-}
-
-export function TrainingPlans() {
-  const headerRef = useScrollReveal()
-  const { trainingPlans } = siteContent
-
-  return (
-    <section id="planovi" className="section training-plans">
-      <SectionDecor variant="plans" />
-      <div className="training-plans__bg" />
-      <div className="container">
-        <div className="section-header scroll-reveal" ref={headerRef}>
-          <span className="section-label">{trainingPlans.label}</span>
-          <LightShimmerText as="h2" variant="title" className="section-title">
-            {trainingPlans.title}
-          </LightShimmerText>
-        </div>
-
-        <div className="training-plans__grid">
-          {trainingPlans.plans.map((plan, i) => (
-            <PlanCard key={plan.title} plan={plan} index={i} />
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function PlanCard({ plan, index }) {
-  const ref = useScrollReveal(0.1)
-  const Icon = planIcons[plan.icon]
-
-  return (
-    <div
-      className="plan-card scroll-reveal"
-      ref={ref}
-      style={{ transitionDelay: `${index * 0.1}s` }}
-    >
-      <div className="plan-card__media">
-        <img src={plan.image} alt={plan.title} className="plan-card__image" loading="lazy" />
-        <div className="plan-card__overlay" />
-        <div className="plan-card__icon">
-          <Icon />
-        </div>
-      </div>
-      <h3>{plan.title}</h3>
-      <p>{plan.description}</p>
-      <a href="#kontakt" className="plan-card__link">Saznaj više →</a>
     </div>
   )
 }

@@ -50,6 +50,20 @@ export const siteContent = {
     label: 'Šta dobijate',
     title: 'Sve što ti treba u jednom programu',
     subtitle: 'Trening, ishrana, video vežbe i praćenje — prilagođeno tebi.',
+    goals: [
+      {
+        icon: 'body',
+        title: 'Oblikovanje tela',
+        description: 'Zatezanje, definicija i bolja forma — prilagođeno tvom ritmu.',
+        image: '/images/plan-body.png',
+      },
+      {
+        icon: 'muscle',
+        title: 'Izgradnja mišića',
+        description: 'Snaga i mišićna masa kroz pametan progres i kontrolisano opterećenje.',
+        image: '/images/plan-muscle.png',
+      },
+    ],
     features: [
       {
         icon: 'plan',
@@ -94,31 +108,6 @@ export const siteContent = {
       { value: '100%', label: 'Stručan pristup' },
       { value: '13+', label: 'godina profesionalne sportske karijere' },
       { value: '5000+', label: 'Sati treninga' },
-    ],
-  },
-
-  trainingPlans: {
-    label: 'Planovi treninga',
-    title: 'Programi za svaki cilj',
-    plans: [
-      {
-        icon: 'body',
-        title: 'Oblikovanje tela',
-        description: 'Zatezanje, definicija i bolja forma — prilagođeno tvom ritmu.',
-        image: '/images/plan-body.png',
-      },
-      {
-        icon: 'muscle',
-        title: 'Izgradnja mišića',
-        description: 'Snaga i mišićna masa kroz pametan progres i kontrolisano opterećenje.',
-        image: '/images/plan-muscle.png',
-      },
-      {
-        icon: 'weight',
-        title: 'Kilaža i ishrana',
-        description: 'Plan treninga i ishrane ka željenoj kilaži — postepeno i održivo.',
-        image: '/images/plan-weight.png',
-      },
     ],
   },
 

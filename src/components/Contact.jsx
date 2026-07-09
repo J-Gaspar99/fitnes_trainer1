@@ -39,43 +39,6 @@ export default function Contact() {
         </div>
 
         <div className="contact__grid">
-          <div className="contact__info scroll-reveal">
-            <div className="contact__card">
-              <HiMail className="contact__icon" />
-              <div>
-                <span className="contact__label">Email</span>
-                <a href={`mailto:${contact.email}`}>{contact.email}</a>
-              </div>
-            </div>
-            <div className="contact__card">
-              <HiPhone className="contact__icon" />
-              <div>
-                <span className="contact__label">Telefon</span>
-                <a href={`tel:${contact.phone.replace(/\s/g, '')}`}>{contact.phone}</a>
-              </div>
-            </div>
-            <div className="contact__card">
-              <FaInstagram className="contact__icon" />
-              <div>
-                <span className="contact__label">Instagram</span>
-                <a
-                  href={`https://instagram.com/${contact.instagram.replace('@', '')}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {contact.instagram}
-                </a>
-              </div>
-            </div>
-            <div className="contact__card">
-              <HiLocationMarker className="contact__icon" />
-              <div>
-                <span className="contact__label">Lokacija</span>
-                <span>{contact.location}</span>
-              </div>
-            </div>
-          </div>
-
           <motion.form
             className="contact__form scroll-reveal"
             ref={formRef}
@@ -120,6 +83,43 @@ export default function Contact() {
               {submitted ? 'Poruka poslata ✓' : 'Pošalji poruku'}
             </button>
           </motion.form>
+
+          <div className="contact__info scroll-reveal">
+            <div className="contact__card">
+              <HiMail className="contact__icon" />
+              <div>
+                <span className="contact__label">Email</span>
+                <a href={`mailto:${contact.email}`}>{contact.email}</a>
+              </div>
+            </div>
+            <div className="contact__card">
+              <HiPhone className="contact__icon" />
+              <div>
+                <span className="contact__label">Telefon</span>
+                <a href={`tel:${contact.phone.replace(/\s/g, '')}`}>{contact.phone}</a>
+              </div>
+            </div>
+            <div className="contact__card">
+              <FaInstagram className="contact__icon" />
+              <div>
+                <span className="contact__label">Instagram</span>
+                <a
+                  href={`https://instagram.com/${contact.instagram.replace('@', '')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {contact.instagram}
+                </a>
+              </div>
+            </div>
+            <div className="contact__card">
+              <HiLocationMarker className="contact__icon" />
+              <div>
+                <span className="contact__label">Lokacija</span>
+                <span>{contact.location}</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

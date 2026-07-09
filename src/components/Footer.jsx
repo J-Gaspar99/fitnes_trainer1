@@ -12,7 +12,6 @@ export default function Footer() {
           <nav className="footer__links" aria-label="Footer navigacija">
             <a href="#pocetna">Početna</a>
             <a href="#program">Program</a>
-            <a href="#planovi">Planovi</a>
             <a href="#galerija">Galerija</a>
             <a href="#kontakt">Kontakt</a>
           </nav>

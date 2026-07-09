@@ -1113,6 +1113,15 @@ body:has(.theme-v3) .mobile-menu__content .btn {
   background: var(--v3-bg);
 }
 
+.theme-v3 .program__goals-grid {
+  margin-top: clamp(18px, 3vw, 28px);
+  margin-bottom: clamp(40px, 5vw, 56px);
+}
+
+.theme-v3 .program__grid {
+  margin-top: 0;
+}
+
 .theme-v3 .program-card,
 .theme-v3 .plan-card,
 .theme-v3 .step-card,
@@ -1472,7 +1481,7 @@ body:has(.theme-v3) .mobile-menu__content .btn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
+  gap: 24px;
 }
 
 .theme-v3 .contact__info {
@@ -1496,7 +1505,7 @@ body:has(.theme-v3) .mobile-menu__content .btn {
   }
 
   .theme-v3 .contact__grid {
-    gap: 40px;
+    gap: 20px;
   }
 }
 
@@ -1533,7 +1542,7 @@ body:has(.theme-v3) .mobile-menu__content .btn {
 }
 
 .theme-v3 .section.contact {
-  padding: clamp(40px, 5vw, 56px) 0;
+  padding: clamp(40px, 5vw, 56px) 0 clamp(20px, 2.5vw, 28px);
 }
 
 .theme-v3 .section.contact .section-header {
@@ -1717,7 +1726,7 @@ body:has(.theme-v3) .mobile-menu__content .btn {
   }
 
   .theme-v3 .section.contact {
-    padding: 28px 0 36px;
+    padding: 28px 0 18px;
   }
 
   .theme-v3 .section.contact .section-header {
