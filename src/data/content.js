@@ -43,41 +43,36 @@ export const siteContent = {
       image: '/images/gallery-1.png',
       imagePosition: 'center 62%',
       imagePositionMobile: 'center 92%',
-    }
+    },
   ],
 
   program: {
-    label: 'Šta dobijate u programu',
-    title: 'Kompletno vođenje — prilagođeno tebi, a ne proseku',
-    subtitle:
-      'Moj program nije zbir gotovih planova. To je sistem koji kombinuje stručno znanje, personalizaciju i podršku kako bi dobio rešenje koje stvarno funkcioniše u praksi.',
+    label: 'Šta dobijate',
+    title: 'Sve što ti treba u jednom programu',
+    subtitle: 'Trening, ishrana, video vežbe i praćenje — prilagođeno tebi.',
     features: [
       {
         icon: 'plan',
-        title: 'Lično kreiran plan treninga',
-        description:
-          'Dobijaš detaljno osmišljen plan treninga prema svom cilju, tempu i nivou iskustva. Svaka nedelja ima jasnu strukturu, logiku napretka i smernice koje ti pomažu da znaš tačno šta radiš i zašto to radiš.',
+        title: 'Plan treninga',
+        description: 'Lično kreiran, sa jasnom strukturom i logikom napretka.',
         image: '/images/program-plan.png',
       },
       {
         icon: 'video',
-        title: 'Video snimci vežbi',
-        description:
-          'Uz svaku važnu vežbu dobijaš jasan video prikaz pravilnog izvođenja, kako bi trenirao bez nesigurnosti. Tako lakše usvajaš tehniku, izbegavaš greške i održavaš kontinuitet čak i kada treniraš samostalno.',
+        title: 'Video vežbi',
+        description: 'Pravilna tehnika na dlanu — treniraj sigurno i samostalno.',
         image: '/images/program-video.png',
       },
       {
         icon: 'nutrition',
-        title: 'Raznovrsni planovi ishrane',
-        description:
-          'Ishrana je prilagođena tvojim potrebama, navikama i ukusu, bez nepotrebnih restrikcija i monotonije. Fokus je na obrocima koje možeš realno da pratiš dugoročno, a da i dalje uživaš u hrani i vidiš rezultate.',
+        title: 'Plan ishrane',
+        description: 'Obroci prilagođeni tvom cilju, navikama i ukusu — bez monotonije.',
         image: '/images/program-nutrition.png',
       },
       {
         icon: 'progress',
         title: 'Praćenje napretka',
-        description:
-          'Napredak pratiš iz nedelje u nedelju kroz beleške, korekcije i jasne smernice za dalje. Na taj način ne radiš naslepo, već u svakom trenutku znaš gde si trenutno, šta je sledeći korak i kako da izvučeš maksimum iz programa.',
+        description: 'Nedeljne korekcije i jasno vidiš gde si i šta je sledeće.',
         image: '/images/program-journal.png',
       },
     ],
@@ -85,12 +80,10 @@ export const siteContent = {
 
   about: {
     title: 'O meni',
-    subtitle: 'Strast, iskustvo i posvećenost svakom klijentu',
+    subtitle: 'Strast, iskustvo i posvećenost',
     paragraphs: [
-      'Ja sam Marija Đorđević, profesor fizičkog vaspitanja, bivša profesionalna atletičarka i fitness trener.',
-      'Sport je moja najveća strast i deo mog života od detinjstva. Profesionalno sam se bavila atletikom 13 godina, tokom kojih sam razvila disciplinu, posvećenost i pobednički način razmišljanja koji danas prenosim kroz svoje programe.',
-      'Danas spajam svoje obrazovanje, dugogodišnje sportsko iskustvo i ljubav prema fitnesu kako bih kreirala programe koji su bezbedni, efikasni i prilagođeni stvarnim ljudima i njihovim ciljevima.',
-      'Moj cilj je da ti pomognem da izgradiš snažno telo, zdrave navike i samopouzdanje koje dolazi iz doslednog rada.',
+      'Profesor fizičkog vaspitanja, bivša profesionalna atletičarka i fitness trener. Sport je deo mog života od detinjstva — 13 godina profesionalne atletike naučilo me disciplini i posvećenosti koju danas prenosim kroz svoje programe.',
+      'Moj cilj je jednostavan: da ti pomognem da izgradiš snažno telo, zdrave navike i samopouzdanje kroz plan koji stvarno možeš da pratiš.',
     ],
     highlights: [
       'Profesor fizičkog vaspitanja',
@@ -111,22 +104,19 @@ export const siteContent = {
       {
         icon: 'body',
         title: 'Oblikovanje tela',
-        description:
-          'Program fokusiran na zatezanje, definiciju i bolju formu tela, prilagođen tvom nivou i ritmu života. Treninzi su osmišljeni tako da oblikuju figuru, poboljšaju tonus i donesu vidljive promene bez preterivanja i iscrpljivanja.',
+        description: 'Zatezanje, definicija i bolja forma — prilagođeno tvom ritmu.',
         image: '/images/plan-body.png',
       },
       {
         icon: 'muscle',
         title: 'Izgradnja mišića',
-        description:
-          'Pametno strukturirani treninzi za razvoj snage i mišićne mase, uz jasan progres i pravilno dozirano opterećenje. Fokus je na kvalitetnom rastu, boljoj funkcionalnosti i estetici koja dolazi iz doslednog, kontrolisanog rada.',
+        description: 'Snaga i mišićna masa kroz pametan progres i kontrolisano opterećenje.',
         image: '/images/plan-muscle.png',
       },
       {
         icon: 'weight',
-        title: 'Dolazak do željene kilaže',
-        description:
-          'Plan treninga i ishrane koji te vodi ka željenoj kilaži postepeno, održivo i bez rigoroznih dijeta. Cilj je da napraviš rezultat koji možeš da zadržiš, uz podršku, jasne smernice i navike koje stvarno funkcionišu u svakodnevici.',
+        title: 'Kilaža i ishrana',
+        description: 'Plan treninga i ishrane ka željenoj kilaži — postepeno i održivo.',
         image: '/images/plan-weight.png',
       },
     ],
@@ -138,86 +128,53 @@ export const siteContent = {
     steps: [
       {
         number: '01',
-        title: 'Zakaži konsultaciju',
-        description:
-          'Popuniš kratak formular ili me kontaktiraš direktno. Dogovaramo se za uvodni razgovor o tvojim ciljevima.',
+        title: 'Konsultacija',
+        description: 'Kratki razgovor o tvojim ciljevima, navikama i očekivanjima.',
       },
       {
         number: '02',
-        title: 'Tvoj lični plan treninga',
-        description:
-          'Na osnovu tvog cilja, nivoa i tempa, dobijaš plan treninga sa jasnom strukturom i smernicama.',
+        title: 'Tvoj plan',
+        description: 'Lični plan treninga i ishrane, prilagođen tebi — ne proseku.',
       },
       {
         number: '03',
-        title: 'Video snimci vežbi',
-        description:
-          'Svaka vežba iz plana ima video prikaz pravilnog izvođenja — treniraš sigurno i sa samopouzdanjem.',
+        title: 'Treniraš sa podrškom',
+        description: 'Video vežbi, saveti i korekcije kad ti zatrebaju.',
       },
       {
         number: '04',
-        title: 'Plan ishrane',
-        description:
-          'Dobijaš plan ishrane prilagođen tvojim potrebama, sa raznovrsnim obrocima koji se vremenom menjaju.',
-      },
-      {
-        number: '05',
-        title: 'Podrška i saveti',
-        description:
-          'Dostupna sam za pitanja, korekcije tehnike i motivaciju tokom celog procesa transformacije.',
-      },
-      {
-        number: '06',
-        title: 'Praćenje napretka',
-        description:
-          'Nedeljno pratiš promene i jasno vidiš rezultate. Plan se prilagođava kako napreduješ.',
+        title: 'Pratiš napredak',
+        description: 'Nedeljno praćenje i prilagođavanje plana kako napreduješ.',
       },
     ],
   },
 
   value: {
-    label: 'Zašto Marija Đorđević Fitnes',
-    title: 'Premium vođenje sa stvarnim rezultatima',
-    subtitle:
-      'Za razliku od generičkih planova, moj pristup daje kontinuitet, fleksibilnost i potpunu pažnju posvećenu tvom napretku.',
-    cta: 'Započni svoju transformaciju',
+    label: 'Zašto ja',
+    title: 'Personalni pristup, stvarni rezultati',
+    subtitle: 'Nije generički šablon — plan koji poznaje tvoje telo i ciljeve.',
+    cta: 'Započni transformaciju',
     items: [
       {
-        title: 'Kontinuitet bez prekida',
-        description:
-          'Tvoj plan je uvek dostupan. Treniraš kada tebi odgovara, uz moju podršku i jasne smernice za svaki korak.',
+        title: 'Sve na jednom mestu',
+        description: 'Plan treninga, ishrana, video vežbi i praćenje — bez lutanja između različitih izvora.',
         image: '/images/value-premium-1.png',
       },
       {
-        title: 'Plan koji je uvek sa tobom',
-        description:
-          'Ne dobijaš samo trening u sali — već kompletan sistem: planove, video vežbe, ishranu i praćenje napretka na jednom mestu.',
+        title: 'Fleksibilno, ali dosledno',
+        description: 'Treniraš kada tebi odgovara, uz jasne smernice i podršku iskusnog trenera.',
         image: '/images/value-premium-2.png',
-      },
-      {
-        title: 'Više vrednosti, personalni pristup',
-        description:
-          'Kvalitetno vođenje sa pravim trenerom koji poznaje tvoje telo, navike i ciljeve — ne generički šablon za sve.',
-        image: '/images/value-premium-1.png',
       },
     ],
   },
 
   ctaBanner: {
-    title: 'Aktiviraj svoj fitnes program!',
-    subtitle:
-      'Program koji donosi rezultate kroz provereno znanje i personalizovan pristup — kreni u transformaciju ka najboljoj verziji sebe.',
+    title: 'Spremna za promenu?',
+    subtitle: 'Jedan program — trening, ishrana i praćenje. Kreni konsultacijom.',
     cards: [
       {
-        title: 'Plan ishrane',
-        description:
-          'Personalizovani plan ishrane prilagođen tvojim ciljevima i ukusu, sa raznovrsnim obrocima koji se lako uklapaju u svakodnevni život.',
-        cta: 'Zakaži konsultaciju',
-      },
-      {
-        title: 'Plan treninga',
-        description:
-          'Treninzi kreirani baš za tebe, prema tvom nivou i cilju, sa jasnom strukturom i kontinuitetom koji donosi vidljive rezultate.',
+        title: 'Kompletan program',
+        description: 'Lični plan treninga i ishrane, video vežbi i podrška tokom cele transformacije.',
         cta: 'Zakaži konsultaciju',
       },
     ],
@@ -250,7 +207,7 @@ export const siteContent = {
 
   gallery: {
     title: 'Galerija',
-    subtitle: 'Treninzi, transformacije i inspiracija',
+    subtitle: 'Treninzi i transformacije',
     images: [
 
       {

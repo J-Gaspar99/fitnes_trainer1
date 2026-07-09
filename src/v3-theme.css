@@ -1405,6 +1405,12 @@ body:has(.theme-v3) .mobile-menu__content .btn {
   margin-bottom: 56px;
 }
 
+.theme-v3 .cta-banner__cards {
+  grid-template-columns: 1fr;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
 .theme-v3 .cta-card {
   padding: clamp(36px, 4vw, 48px) clamp(28px, 3vw, 40px);
 }

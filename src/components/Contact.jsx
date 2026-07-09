@@ -34,7 +34,7 @@ export default function Contact() {
             Zakaži konsultaciju
           </LightShimmerText>
           <LightShimmerText as="p" variant="subtitle" className="section-subtitle">
-            Prvi korak ka transformaciji — pošalji poruku i javiću ti se u roku od 24h
+            Pošalji poruku — javiću ti se u roku od 24h.
           </LightShimmerText>
         </div>
 
