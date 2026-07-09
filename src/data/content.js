@@ -97,7 +97,7 @@ export const siteContent = {
     subtitle: 'Strast, iskustvo i posvećenost',
     paragraphs: [
       'Profesor fizičkog vaspitanja, bivša profesionalna atletičarka i fitness trener. Sport je deo mog života od detinjstva — 13 godina profesionalne atletike naučilo me disciplini i posvećenosti koju danas prenosim kroz svoje programe.',
-      'Moj cilj je jednostavan: da ti pomognem da izgradiš snažno telo, zdrave navike i samopouzdanje kroz plan koji stvarno možeš da pratiš.',
+      'Moj cilj je da ti pomognem da izgradiš snažno telo, zdrave navike i samopouzdanje koje dolazi iz doslednog rada.',
     ],
     highlights: [
       'Profesor fizičkog vaspitanja',
