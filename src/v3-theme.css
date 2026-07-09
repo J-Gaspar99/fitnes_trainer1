@@ -316,41 +316,107 @@ body:has(.theme-v3) {
   padding: 0;
 }
 
-.theme-v3 .mobile-menu__bg-gradient {
+/* Mobilni meni je portovan na body — stilovi moraju ići preko body:has(.theme-v3) */
+body:has(.theme-v3) .mobile-menu__bg-gradient {
   background:
-    linear-gradient(165deg,
-      rgba(255, 255, 255, 0.98) 0%,
-      rgba(250, 247, 242, 0.98) 40%,
-      rgba(245, 238, 248, 0.98) 100%
+    linear-gradient(145deg,
+      #b88f8e 0%,
+      #dbb5b4 52%,
+      #e6c8c7 100%
     );
+}
+
+body:has(.theme-v3) .mobile-menu__bg-glow--purple {
+  background: #dbb5b4;
+  opacity: 0.55;
+}
+
+body:has(.theme-v3) .mobile-menu__bg-glow--gold {
+  background: #efd8d7;
+  opacity: 0.35;
 }
 
 .theme-v3 .navbar--menu-open {
   z-index: calc(var(--z-nav) + 1);
 }
 
-.theme-v3 .mobile-menu__close {
-  color: var(--v3-purple-deep);
-  border-color: rgba(75, 44, 94, 0.2);
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 4px 18px rgba(75, 44, 94, 0.12);
+body:has(.theme-v3) .mobile-menu__close {
+  color: #1a1208;
+  border-color: rgba(197, 160, 89, 0.35);
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 4px 18px rgba(184, 143, 142, 0.22);
 }
 
-.theme-v3 .mobile-menu__close:hover {
-  border-color: var(--v3-purple);
-  color: var(--v3-purple);
+body:has(.theme-v3) .mobile-menu__close:hover {
+  border-color: #c5a059;
+  color: #1a1208;
 }
 
-.theme-v3 .mobile-menu__backdrop {
-  background: rgba(26, 16, 36, 0.45);
+body:has(.theme-v3) .mobile-menu__backdrop {
+  background: rgba(26, 18, 8, 0.4);
 }
 
-.theme-v3 .mobile-menu__link {
-  color: var(--v3-text);
+body:has(.theme-v3) .mobile-menu__content {
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 0;
+  padding:
+    calc(72px + env(safe-area-inset-top, 0px))
+    clamp(16px, 5vw, 28px)
+    max(24px, env(safe-area-inset-bottom, 0px));
 }
 
-.theme-v3 .mobile-menu__link:hover {
-  color: var(--v3-purple);
+body:has(.theme-v3) .mobile-menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+  max-height: none;
+  padding: clamp(8px, 1.8vh, 18px) 12px;
+  font-size: clamp(1.85rem, 7vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: #1a1208;
+  text-shadow: none;
+}
+
+body:has(.theme-v3) .mobile-menu__link:hover {
+  color: #c5a059;
+}
+
+body:has(.theme-v3) .mobile-menu__content .btn {
+  width: 100%;
+  flex-shrink: 0;
+  margin-top: 0;
+  padding: clamp(14px, 2.2vh, 18px) 28px;
+  font-size: clamp(0.85rem, 2.8vw, 0.95rem);
+}
+
+@media (max-height: 720px) {
+  body:has(.theme-v3) .mobile-menu__content {
+    justify-content: space-evenly;
+    gap: 0;
+    padding-top: calc(68px + env(safe-area-inset-top, 0px));
+  }
+
+  body:has(.theme-v3) .mobile-menu__link {
+    font-size: clamp(1.55rem, 6vw, 2rem);
+    padding: clamp(6px, 1.4vh, 12px) 12px;
+  }
+}
+
+@media (max-height: 620px) {
+  body:has(.theme-v3) .mobile-menu__link {
+    font-size: clamp(1.35rem, 5.5vw, 1.75rem);
+    padding: 6px 12px;
+  }
+
+  body:has(.theme-v3) .mobile-menu__content .btn {
+    padding: 12px 24px;
+  }
 }
 
 /* ─── Hero — split sa "<" ivicom (kao referenca) ─── */

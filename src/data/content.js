@@ -95,12 +95,12 @@ export const siteContent = {
     highlights: [
       'Profesor fizičkog vaspitanja',
       'Bivša profesionalna atletičarka',
-      '13 godina atletskog iskustva',
+      '13 godina profesionalne sportske karijere',
     ],
     stats: [
-      { value: '500+', label: 'Zadovoljnih klijenata' },
-      { value: '13+', label: 'Godina iskustva' },
-      { value: '15+', label: 'Sertifikata' },
+      { value: '100%', label: 'Stručan pristup' },
+      { value: '13+', label: 'godina profesionalne sportske karijere' },
+      { value: '5000+', label: 'Sati treninga' },
     ],
   },
 
