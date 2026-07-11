@@ -58,8 +58,13 @@ export default function About() {
               ))}
             </div>
 
-            <a href="#kontakt" className="btn btn--purple">
-              Započni transformaciju
+            <a
+              href={siteContent.platform.url}
+              className="btn btn--purple"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {siteContent.platform.cta}
             </a>
           </div>
         </div>

@@ -3,13 +3,26 @@ export const siteContent = {
   brand: 'Marija Đorđević Fitnes',
   tagline: 'Jako telo. Jak um. Bez granica.',
 
+  platform: {
+    url: 'https://platform.marijadjordjevic.rs/registracija',
+    cta: 'Napravi profil',
+    section: {
+      label: 'Platforma',
+      title: 'Spreman za početak?',
+      subtitle: 'Napravi profil na platformi i pristupi programu treninga, ishrane i praćenju napretka.',
+      cardTitle: 'Tvoj lični fitnes prostor',
+      cardDescription:
+        'Sve na jednom mestu — plan treninga, ishrana, video vežbi i podrška tokom cele transformacije.',
+    },
+  },
+
   heroIntro: {
     badge: 'Personalni trener · Online & uživo',
     title: 'Marija Đorđević',
     headline: 'Premium fitnes\nkoji donosi rezultate',
     description:
       'Stručno vođenje, jasan plan i podrška na svakom koraku — bez kompromisa i bez lutanja.',
-    ctaPrimary: 'Zakaži konsultaciju',
+    ctaPrimary: 'Napravi profil',
     ctaSecondary: 'Pogledaj program',
   },
 
@@ -19,7 +32,7 @@ export const siteContent = {
       title: 'Transformiši telo.\nOstvari ciljeve.',
       description:
         'Individualni pristup, naučno utemeljeni programi i podrška koja te vodi do rezultata — bez kompromisa.',
-      cta: 'Zakaži konsultaciju',
+      cta: 'Napravi profil',
       image: '/images/hero.png',
       imagePosition: 'center 62%',
       imagePositionMobile: 'center 92%',
@@ -29,7 +42,7 @@ export const siteContent = {
       title: 'Novi način\ntreniranja',
       description:
         'Reci mi svoje navike i ciljeve, a ja ti kreiram jasan plan koji te vodi korak po korak — bez lutanja i bez stresa.',
-      cta: 'Započni transformaciju',
+      cta: 'Napravi profil',
       image: '/images/about.png',
       imagePosition: 'center 62%',
       imagePositionMobile: 'center 92%',
@@ -39,7 +52,7 @@ export const siteContent = {
       title: 'Do željene\nforme',
       description:
         'Personalizovani treninzi i ishrana kreirani za tvoj cilj — uz podršku iskusnog trenera i praćenje napretka.',
-      cta: 'Aktiviraj program',
+      cta: 'Napravi profil',
       image: '/images/gallery-1.png',
       imagePosition: 'center 62%',
       imagePositionMobile: 'center 92%',
@@ -117,8 +130,8 @@ export const siteContent = {
     steps: [
       {
         number: '01',
-        title: 'Konsultacija',
-        description: 'Kratki razgovor o tvojim ciljevima, navikama i očekivanjima.',
+        title: 'Napravi profil',
+        description: 'Registruj se na platformi i popuni osnovne podatke o sebi i svojim ciljevima.',
       },
       {
         number: '02',
@@ -142,7 +155,7 @@ export const siteContent = {
     label: 'Zašto ja',
     title: 'Personalni pristup, stvarni rezultati',
     subtitle: 'Nije generički šablon — plan koji poznaje tvoje telo i ciljeve.',
-    cta: 'Započni transformaciju',
+    cta: 'Napravi profil',
     items: [
       {
         title: 'Sve na jednom mestu',
@@ -159,12 +172,12 @@ export const siteContent = {
 
   ctaBanner: {
     title: 'Spremna za promenu?',
-    subtitle: 'Jedan program — trening, ishrana i praćenje. Kreni konsultacijom.',
+    subtitle: 'Jedan program — trening, ishrana i praćenje. Kreni kreiranjem profila.',
     cards: [
       {
         title: 'Kompletan program',
         description: 'Lični plan treninga i ishrane, video vežbi i podrška tokom cele transformacije.',
-        cta: 'Zakaži konsultaciju',
+        cta: 'Napravi profil',
       },
     ],
   },
@@ -228,10 +241,4 @@ export const siteContent = {
     ],
   },
 
-  contact: {
-    email: 'marija@djordjevicfitness.rs',
-    phone: '+381 64 123 4567',
-    instagram: '@marija.djordjevic.fitnes',
-    location: 'Beograd, Srbija',
-  },
 }

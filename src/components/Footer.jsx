@@ -13,7 +13,7 @@ export default function Footer() {
             <a href="#pocetna">Početna</a>
             <a href="#program">Program</a>
             <a href="#galerija">Galerija</a>
-            <a href="#kontakt">Kontakt</a>
+            <a href="#platforma">Platforma</a>
           </nav>
         </div>
 

@@ -5,7 +5,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function HowItWorks() {
   const headerRef = useScrollReveal()
-  const { howItWorks } = siteContent
+  const { howItWorks, platform } = siteContent
 
   return (
     <section id="kako-radi" className="section how-it-works">
@@ -21,7 +21,7 @@ export default function HowItWorks() {
 
         <div className="steps-grid">
           {howItWorks.steps.map((step, i) => (
-            <StepCard key={step.number} step={step} index={i} />
+            <StepCard key={step.number} step={step} index={i} platformUrl={platform.url} platformCta={platform.cta} />
           ))}
         </div>
       </div>
@@ -29,7 +29,7 @@ export default function HowItWorks() {
   )
 }
 
-function StepCard({ step, index }) {
+function StepCard({ step, index, platformUrl, platformCta }) {
   const ref = useScrollReveal(0.08)
 
   return (
@@ -40,7 +40,14 @@ function StepCard({ step, index }) {
     >
       <h3>{step.title}</h3>
       <p>{step.description}</p>
-      <a href="#kontakt" className="step-card__cta">Zakaži termin →</a>
+      <a
+        href={platformUrl}
+        className="step-card__cta"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {platformCta} →
+      </a>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function ValueSection() {
   const headerRef = useScrollReveal()
-  const { value } = siteContent
+  const { value, platform } = siteContent
 
   return (
     <section id="zasto" className="section value-section">
@@ -28,7 +28,12 @@ export default function ValueSection() {
         </div>
 
         <div className="value-section__cta scroll-reveal">
-          <a href="#kontakt" className="btn btn--gold btn--lg shimmer-btn">
+          <a
+            href={platform.url}
+            className="btn btn--gold btn--lg shimmer-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {value.cta}
           </a>
         </div>

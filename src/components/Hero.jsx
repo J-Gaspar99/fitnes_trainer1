@@ -36,6 +36,7 @@ export default function Hero() {
   }, [next])
 
   const slide = slides[current]
+  const { platform } = siteContent
 
   return (
     <section id="pocetna" className="hero-zigzag">
@@ -59,7 +60,12 @@ export default function Hero() {
               ))}
             </LightShimmerText>
             <p className="hero-zigzag__desc">{slide.description}</p>
-            <a href="#kontakt" className="btn btn--gold btn--lg shimmer-btn hero-zigzag__cta">
+            <a
+              href={platform.url}
+              className="btn btn--gold btn--lg shimmer-btn hero-zigzag__cta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {slide.cta}
             </a>
           </motion.div>

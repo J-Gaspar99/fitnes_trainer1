@@ -18,7 +18,7 @@ const goalIcons = {
 
 export default function Program() {
   const headerRef = useScrollReveal()
-  const { program } = siteContent
+  const { program, platform } = siteContent
 
   return (
     <section id="program" className="section program">
@@ -36,7 +36,7 @@ export default function Program() {
 
         <div className="program__goals-grid training-plans__grid">
           {program.goals.map((goal, i) => (
-            <GoalCard key={goal.title} goal={goal} index={i} />
+            <GoalCard key={goal.title} goal={goal} index={i} platformUrl={platform.url} platformCta={platform.cta} />
           ))}
         </div>
 
@@ -50,7 +50,7 @@ export default function Program() {
   )
 }
 
-function GoalCard({ goal, index }) {
+function GoalCard({ goal, index, platformUrl, platformCta }) {
   const ref = useScrollReveal(0.1)
   const Icon = goalIcons[goal.icon]
 
@@ -69,7 +69,14 @@ function GoalCard({ goal, index }) {
       </div>
       <h3>{goal.title}</h3>
       <p>{goal.description}</p>
-      <a href="#kontakt" className="plan-card__link">Saznaj više →</a>
+      <a
+        href={platformUrl}
+        className="plan-card__link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {platformCta} →
+      </a>
     </div>
   )
 }

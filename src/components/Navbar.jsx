@@ -9,7 +9,7 @@ const navLinks = [
   { href: '#program', label: 'Program' },
   { href: '#o-meni', label: 'O meni' },
   { href: '#galerija', label: 'Galerija' },
-  { href: '#kontakt', label: 'Kontakt' },
+  { href: '#platforma', label: 'Platforma' },
 ]
 
 export default function Navbar() {
@@ -40,6 +40,7 @@ export default function Navbar() {
 
   const handleNavClick = () => setMenuOpen(false)
   const closeMenu = () => setMenuOpen(false)
+  const { platform } = siteContent
 
   return (
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''} ${menuOpen ? 'navbar--menu-open' : ''}`}>
@@ -65,8 +66,13 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a href="#kontakt" className="btn btn--gold navbar__cta">
-          Zakaži termin
+        <a
+          href={platform.url}
+          className="btn btn--gold navbar__cta"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {platform.cta}
         </a>
 
         <button
@@ -124,8 +130,14 @@ export default function Navbar() {
                     {link.label}
                   </motion.a>
                 ))}
-                <a href="#kontakt" className="btn btn--gold shimmer-btn" onClick={handleNavClick}>
-                  Zakaži termin
+                <a
+                  href={platform.url}
+                  className="btn btn--gold shimmer-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={handleNavClick}
+                >
+                  {platform.cta}
                 </a>
               </div>
             </motion.div>

@@ -4,7 +4,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function CtaBanner() {
   const ref = useScrollReveal()
-  const { ctaBanner } = siteContent
+  const { ctaBanner, platform } = siteContent
 
   return (
     <section className="section cta-banner">
@@ -18,7 +18,7 @@ export default function CtaBanner() {
 
         <div className="cta-banner__cards">
           {ctaBanner.cards.map((card) => (
-            <CtaCard key={card.title} card={card} />
+            <CtaCard key={card.title} card={card} platformUrl={platform.url} />
           ))}
         </div>
       </div>
@@ -26,14 +26,19 @@ export default function CtaBanner() {
   )
 }
 
-function CtaCard({ card }) {
+function CtaCard({ card, platformUrl }) {
   const ref = useScrollReveal(0.1)
 
   return (
     <div className="cta-card scroll-reveal" ref={ref}>
       <h3>{card.title}</h3>
       <p>{card.description}</p>
-      <a href="#kontakt" className="btn btn--outline shimmer-border">
+      <a
+        href={platformUrl}
+        className="btn btn--outline shimmer-border"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {card.cta}
       </a>
     </div>
