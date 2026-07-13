@@ -29,9 +29,9 @@ export const siteContent = {
   heroSlides: [
     {
       label: 'Premium personalni trening',
-      title: 'Transformiši telo.\nOstvari ciljeve.',
+      title: 'Tvoja forma.\nTvoj cilj.',
       description:
-        'Individualni pristup, naučno utemeljeni programi i podrška koja te vodi do rezultata — bez kompromisa.',
+        'Lični plan i podrška koja te vodi do rezultata — bez lutanja.',
       cta: 'Napravi profil',
       image: '/images/gallery-photo-2.jpg',
       imagePosition: 'center 35%',
