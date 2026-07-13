@@ -146,12 +146,12 @@ export const siteContent = {
       {
         title: 'Sve na jednom mestu',
         description: 'Plan treninga, ishrana, video vežbi i praćenje — bez lutanja između različitih izvora.',
-        image: '/images/value-premium-1.png',
+        image: '/images/gallery-photo-1.jpg',
       },
       {
         title: 'Fleksibilno, ali dosledno',
         description: 'Treniraš kada tebi odgovara, uz jasne smernice i podršku iskusnog trenera.',
-        image: '/images/value-premium-2.png',
+        image: '/images/gallery-photo-4.jpg',
       },
     ],
   },
