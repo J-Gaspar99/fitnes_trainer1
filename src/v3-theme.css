@@ -1333,11 +1333,17 @@ body:has(.theme-v3) .mobile-menu__content .btn {
 
 .theme-v3 .value-card__image {
   border-color: rgba(197, 160, 89, 0.28);
+  background: rgba(26, 18, 8, 0.04);
 }
 
 .theme-v3 .value-card__image img {
-  background: rgba(255, 255, 255, 0.04);
-  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+  padding: 0;
+  display: block;
 }
 
 .theme-v3 .plan-card__link,
