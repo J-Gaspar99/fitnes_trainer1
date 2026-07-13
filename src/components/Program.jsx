@@ -1,6 +1,6 @@
 import LightShimmerText from './LightShimmerText'
 import SectionDecor from './SectionDecor'
-import { FaClipboardList, FaVideo, FaAppleAlt, FaChartLine, FaFemale, FaDumbbell } from 'react-icons/fa'
+import { FaClipboardList, FaVideo, FaAppleAlt, FaChartLine } from 'react-icons/fa'
 import { siteContent } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
@@ -11,14 +11,9 @@ const programIcons = {
   progress: FaChartLine,
 }
 
-const goalIcons = {
-  body: FaFemale,
-  muscle: FaDumbbell,
-}
-
 export default function Program() {
   const headerRef = useScrollReveal()
-  const { program, platform } = siteContent
+  const { program } = siteContent
 
   return (
     <section id="program" className="section program">
@@ -34,12 +29,6 @@ export default function Program() {
           </LightShimmerText>
         </div>
 
-        <div className="program__goals-grid training-plans__grid">
-          {program.goals.map((goal, i) => (
-            <GoalCard key={goal.title} goal={goal} index={i} platformUrl={platform.url} platformCta={platform.cta} />
-          ))}
-        </div>
-
         <div className="program__grid">
           {program.features.map((feature, i) => (
             <ProgramCard key={feature.title} feature={feature} index={i} />
@@ -47,37 +36,6 @@ export default function Program() {
         </div>
       </div>
     </section>
-  )
-}
-
-function GoalCard({ goal, index, platformUrl, platformCta }) {
-  const ref = useScrollReveal(0.1)
-  const Icon = goalIcons[goal.icon]
-
-  return (
-    <div
-      className="plan-card scroll-reveal"
-      ref={ref}
-      style={{ transitionDelay: `${index * 0.1}s` }}
-    >
-      <div className="plan-card__media">
-        <img src={goal.image} alt={goal.title} className="plan-card__image" loading="lazy" />
-        <div className="plan-card__overlay" />
-        <div className="plan-card__icon">
-          <Icon />
-        </div>
-      </div>
-      <h3>{goal.title}</h3>
-      <p>{goal.description}</p>
-      <a
-        href={platformUrl}
-        className="plan-card__link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {platformCta} →
-      </a>
-    </div>
   )
 }
 

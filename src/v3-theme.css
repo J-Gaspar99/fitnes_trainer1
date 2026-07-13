@@ -236,7 +236,7 @@ body:has(.theme-v3) {
   display: block;
   object-fit: contain;
   filter: none;
-  background: transparent;
+  background: #000000;
   border-radius: 0;
 }
 

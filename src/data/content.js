@@ -4,7 +4,7 @@ export const siteContent = {
   tagline: 'Jako telo. Jak um. Bez granica.',
 
   platform: {
-    url: 'https://platform.marijadjordjevic.rs/registracija',
+    url: 'https://moj.mdjfitness.com/',
     cta: 'Napravi profil',
     section: {
       label: 'Platforma',
@@ -33,9 +33,9 @@ export const siteContent = {
       description:
         'Individualni pristup, naučno utemeljeni programi i podrška koja te vodi do rezultata — bez kompromisa.',
       cta: 'Napravi profil',
-      image: '/images/hero.png',
-      imagePosition: 'center 62%',
-      imagePositionMobile: 'center 92%',
+      image: '/images/gallery-photo-2.jpg',
+      imagePosition: 'center 35%',
+      imagePositionMobile: 'center 20%',
     },
     {
       label: 'Do najbolje verzije sebe',
@@ -43,9 +43,9 @@ export const siteContent = {
       description:
         'Reci mi svoje navike i ciljeve, a ja ti kreiram jasan plan koji te vodi korak po korak — bez lutanja i bez stresa.',
       cta: 'Napravi profil',
-      image: '/images/about.png',
-      imagePosition: 'center 62%',
-      imagePositionMobile: 'center 92%',
+      image: '/images/gallery-photo-3.jpg',
+      imagePosition: 'center 30%',
+      imagePositionMobile: 'center 18%',
     },
     {
       label: 'Pametan plan. Stvarni rezultati.',
@@ -53,9 +53,9 @@ export const siteContent = {
       description:
         'Personalizovani treninzi i ishrana kreirani za tvoj cilj — uz podršku iskusnog trenera i praćenje napretka.',
       cta: 'Napravi profil',
-      image: '/images/gallery-1.png',
-      imagePosition: 'center 62%',
-      imagePositionMobile: 'center 92%',
+      image: '/images/gallery-photo-5.jpg',
+      imagePosition: 'center 40%',
+      imagePositionMobile: 'center 22%',
     },
   ],
 
@@ -63,20 +63,6 @@ export const siteContent = {
     label: 'Šta dobijate',
     title: 'Sve što ti treba u jednom programu',
     subtitle: 'Trening, ishrana, video vežbe i praćenje — prilagođeno tebi.',
-    goals: [
-      {
-        icon: 'body',
-        title: 'Oblikovanje tela',
-        description: 'Zatezanje, definicija i bolja forma — prilagođeno tvom ritmu.',
-        image: '/images/plan-body.png',
-      },
-      {
-        icon: 'muscle',
-        title: 'Izgradnja mišića',
-        description: 'Snaga i mišićna masa kroz pametan progres i kontrolisano opterećenje.',
-        image: '/images/plan-muscle.png',
-      },
-    ],
     features: [
       {
         icon: 'plan',
@@ -211,17 +197,31 @@ export const siteContent = {
     title: 'Galerija',
     subtitle: 'Treninzi i transformacije',
     images: [
-
       {
-        src: '/images/about.png',
-        alt: 'Marija Đorđević — trening poza',
+        src: '/images/gallery-photo-1.jpg',
+        alt: 'Marija Đorđević — trening u teretani',
+        caption: 'Fokus. Forma. Rezultat.',
+      },
+      {
+        src: '/images/gallery-photo-2.jpg',
+        alt: 'Marija Đorđević — odmor posle treninga',
         caption: 'Disciplina je luksuz',
       },
       {
-        src: '/images/gallery-1.png',
-        alt: 'Marija Đorđević — fitnes sesija',
-        caption: 'Fokus. Forma. Rezultat.',
-      }
+        src: '/images/gallery-photo-3.jpg',
+        alt: 'Marija Đorđević — fitnes poza',
+        caption: 'Snaga. Samopouzdanje. Stil.',
+      },
+      {
+        src: '/images/gallery-photo-4.jpg',
+        alt: 'Marija Đorđević — istezanje u teretani',
+        caption: 'Mobilnost i kontrola',
+      },
+      {
+        src: '/images/gallery-photo-5.jpg',
+        alt: 'Marija Đorđević — vežba u teretani',
+        caption: 'Doslednost donosi promenu',
+      },
     ],
     videos: [
       {

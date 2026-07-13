@@ -32,7 +32,7 @@ export default function About() {
           >
             <div className="about__image-frame">
               <img
-                src="/images/about.png"
+                src="/images/about.jpg"
                 alt="Marija Đorđević na treningu"
                 className="about__image"
               />
